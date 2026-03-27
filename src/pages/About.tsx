@@ -45,7 +45,7 @@ function useReveal(deps: any[] = []) {
 }
 
 export default function About() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const { items: timelinePosts } = useModule('timelineEntries')
   const { items: affiliations } = useModule('affiliations')
   const { items: awards } = useModule('awards')
