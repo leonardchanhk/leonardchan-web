@@ -53,7 +53,6 @@ export default function About() {
   const { ref: heroParallaxRef, bgPos: heroBgPos } = useParallaxBg(0.3)
   const { ref: ctaParallaxRef, bgPos: ctaBgPos } = useParallaxBg(0.2)
 
-  const currentLang = i18n.language
 
   // CMS data loaded via useCmsData hooks above
 

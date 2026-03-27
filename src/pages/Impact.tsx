@@ -52,6 +52,7 @@ type Project = {
   status: string
   description: string
   url: string
+  projectUrl?: string
   imageUrl?: string
   tags: string[]
   accentColor: string
