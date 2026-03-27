@@ -1,0 +1,1080 @@
+{
+  "pages": {
+    "home": {
+      "test_field": "test_value_1774643975736"
+    },
+    "about": {
+      "affiliations_heading": "Professional Affiliations",
+      "awards_heading": "Awards & Honours",
+      "bio": "Leonard Chan Tik Yuen, MH is a Hong Kong technology leader, entrepreneur, and public servant with over three decades of experience in the ICT industry. He is the Founder & CEO of tag.digital Limited, a technology consultancy focused on AI governance, cybersecurity, and digital strategy.\n\nLeonard holds numerous public appointments including Board Member of AIRDI, Deputy Chairman of HKIRC, and DevCom Chairman of TIA. He was awarded the Medal of Honour (MH) by the HKSAR Government in 2025 for distinguished public service.\n\nA double APICTA winner, UN World Summit Award laureate, and US patent holder, Leonard combines deep technical expertise with strategic vision for Hong Kong's digital future.",
+      "cta_heading": "Let's Shape the Future Together",
+      "cta_text": "Whether through advisory, speaking, or strategic collaboration — let's build Hong Kong's digital future together.",
+      "hero_subtitle": "30+ years shaping Hong Kong's technology landscape",
+      "hero_title": "About Leonard Chan, MH",
+      "timeline_heading": "Career Timeline"
+    },
+    "organisations": {
+      "hero_subtitle": "Current and past leadership roles across technology, government, and academia.",
+      "hero_title": "Organisations"
+    },
+    "insights": {
+      "articles_heading": "Articles & Columns",
+      "hero_subtitle": "Articles, columns, and media appearances on technology, AI governance, and digital economy.",
+      "hero_title": "Insights & Commentary",
+      "tv_heading": "TV & Media Appearances"
+    },
+    "speaking": {
+      "cta_heading": "Invite Leonard to Speak",
+      "cta_text": "Available for keynotes, panel discussions, and guest lectures on AI governance, digital transformation, and technology policy.",
+      "hero_subtitle": "Keynotes, panels, and lectures on AI governance, digital transformation, and technology policy.",
+      "hero_title": "Speaking Engagements",
+      "past_heading": "Past Engagements",
+      "upcoming_heading": "Upcoming Engagements"
+    },
+    "impact": {
+      "hero_subtitle": "Key initiatives, projects, and social impact across technology and public service.",
+      "hero_title": "Impact & Projects",
+      "projects_heading": "Key Projects",
+      "social_heading": "Social Impact"
+    },
+    "interests": {
+      "genai_heading": "Generative AI Art",
+      "hero_subtitle": "Photography, generative AI art, music, and other creative pursuits.",
+      "hero_title": "Beyond Technology",
+      "other_heading": "Other Interests",
+      "photography_heading": "Photography"
+    },
+    "contact": {
+      "hero_subtitle": "For speaking invitations, advisory enquiries, media requests, or general correspondence.",
+      "hero_title": "Get in Touch",
+      "social_heading": "Connect Online",
+      "social_links": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://linkedin.com/in/leonardchan"
+        },
+        {
+          "platform": "Facebook",
+          "url": "https://facebook.com/drchan"
+        },
+        {
+          "platform": "tag.digital",
+          "url": "https://www.tag.digital"
+        }
+      ]
+    },
+    "media": {
+      "facts": [
+        {
+          "label": "Full Name",
+          "value": "Leonard Chan Tik Yuen, MH"
+        },
+        {
+          "label": "Title",
+          "value": "Founder & CEO, tag.digital Limited"
+        },
+        {
+          "label": "Honours",
+          "value": "Medal of Honour (MH), HKSAR Government 2025"
+        },
+        {
+          "label": "Key Roles",
+          "value": "AIRDI Board Member, HKIRC Deputy Chairman, TIA DevCom Chairman"
+        },
+        {
+          "label": "Education",
+          "value": "Adjunct Professor, Communication University of China"
+        },
+        {
+          "label": "Awards",
+          "value": "Double APICTA Winner, UN World Summit Award"
+        },
+        {
+          "label": "Patent",
+          "value": "US Patent — Embroidery CAD/CAM System"
+        },
+        {
+          "label": "Experience",
+          "value": "30+ years in Hong Kong ICT industry"
+        }
+      ],
+      "facts_heading": "Quick Facts",
+      "hero_subtitle": "Press resources, downloadable assets, and quick facts for journalists and event organisers.",
+      "hero_title": "Media Corner"
+    },
+    "wisdom": {
+      "hero_subtitle": "Principles, philosophies, and lessons from three decades in technology and public service.",
+      "hero_title": "Wisdom & Insights"
+    },
+    "year-in-review": {
+      "hero_subtitle": "Annual video retrospectives capturing the highlights, milestones, and moments of each year.",
+      "hero_title": "Year in Review"
+    },
+    "projects": {
+      "hero_subtitle": "Technology projects, platforms, and initiatives spanning three decades of innovation.",
+      "hero_title": "Projects"
+    }
+  },
+  "settings": {
+    "test_setting_1774643935710": "test_value_1774643935710",
+    "test_setting_1774643976049": "test_value_1774643976049"
+  },
+  "modules": {
+    "organisations": [
+      {
+        "id": 1,
+        "name": "Updated Org 1774643935520",
+        "role": "Founder & CEO",
+        "description": "A technology consultancy and digital transformation company focused on AI governance, cybersecurity, and digital strategy for enterprises and government bodies in Hong Kong and the Greater Bay Area.",
+        "logoUrl": null,
+        "websiteUrl": "https://www.tag.digital",
+        "category": "Technology",
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:09.000Z",
+        "updatedAt": "2026-03-27T20:39:35.000Z"
+      },
+      {
+        "id": 7,
+        "name": "Test Org 1774643935484",
+        "role": "Test Role",
+        "description": null,
+        "logoUrl": null,
+        "websiteUrl": null,
+        "category": "Technology",
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:38:55.000Z",
+        "updatedAt": "2026-03-27T20:39:35.000Z"
+      },
+      {
+        "id": 2,
+        "name": "AIRDI",
+        "role": "Board Member",
+        "description": "The Artificial Intelligence Research and Development Institute — Hong Kong's premier AI governance and research body.",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/site-images/airdi_e437d1f5.jpg",
+        "websiteUrl": "https://www.airdi.org.hk",
+        "category": "Government",
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:09.000Z",
+        "updatedAt": "2026-03-27T20:39:35.000Z"
+      },
+      {
+        "id": 3,
+        "name": "HKIRC",
+        "role": "Deputy Chairman",
+        "description": "Hong Kong Internet Registration Corporation — the registry for .hk and .香港 domain names.",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/logos/hkirc.png",
+        "websiteUrl": "https://www.hkirc.hk",
+        "category": "Technology",
+        "sortOrder": 3,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:09.000Z",
+        "updatedAt": "2026-03-27T20:38:55.000Z"
+      },
+      {
+        "id": 4,
+        "name": "TIA",
+        "role": "DevCom Chairman",
+        "description": "Technology Industry Alliance — a coalition of Hong Kong's leading technology industry associations.",
+        "logoUrl": null,
+        "websiteUrl": "https://www.tia.org.hk",
+        "category": "Technology",
+        "sortOrder": 4,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:09.000Z",
+        "updatedAt": "2026-03-27T20:39:35.000Z"
+      },
+      {
+        "id": 5,
+        "name": "HKITDA",
+        "role": "Founding Chairman",
+        "description": "Hong Kong IT Distributors Association — representing Hong Kong's IT distribution and retail industry.",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/site-images/hkitda_e397dae1.jpg",
+        "websiteUrl": "https://www.hkitda.org",
+        "category": "Technology",
+        "sortOrder": 5,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:09.000Z",
+        "updatedAt": "2026-03-27T20:39:35.000Z"
+      },
+      {
+        "id": 9,
+        "name": "Test Org 1774643975783",
+        "role": "Test Role",
+        "description": null,
+        "logoUrl": null,
+        "websiteUrl": null,
+        "category": "Technology",
+        "sortOrder": 6,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:39:35.000Z",
+        "updatedAt": "2026-03-27T20:39:35.000Z"
+      },
+      {
+        "id": 6,
+        "name": "Updated Org 1774643975825",
+        "role": "Deputy Director, HK-Macau-Taiwan Studies Centre",
+        "description": "One of China's top universities for media and communication studies, where Leonard serves as Adjunct Professor and Deputy Director of the Centre for Hong Kong, Macao, Taiwan and World Affairs Studies.",
+        "logoUrl": null,
+        "websiteUrl": "https://www.cuc.edu.cn",
+        "category": "Academic",
+        "sortOrder": 7,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:09.000Z",
+        "updatedAt": "2026-03-27T20:39:35.000Z"
+      }
+    ],
+    "posts": [
+      {
+        "id": 10,
+        "type": "article",
+        "slug": null,
+        "title": "Test Post 1774643935670",
+        "excerpt": null,
+        "body": null,
+        "coverImage": null,
+        "category": null,
+        "tags": null,
+        "author": null,
+        "status": "draft",
+        "publishedAt": null,
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:38:55.000Z",
+        "updatedAt": "2026-03-27T20:38:55.000Z"
+      },
+      {
+        "id": 11,
+        "type": "article",
+        "slug": null,
+        "title": "Test Post 1774643976007",
+        "excerpt": null,
+        "body": null,
+        "coverImage": null,
+        "category": null,
+        "tags": null,
+        "author": null,
+        "status": "draft",
+        "publishedAt": null,
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:39:36.000Z",
+        "updatedAt": "2026-03-27T20:39:36.000Z"
+      },
+      {
+        "id": 1,
+        "type": "article",
+        "slug": "hong-kongs-five-year-plan-a-digital-blueprint",
+        "title": "Hong Kong's Five-Year Plan: A Digital Blueprint",
+        "excerpt": "Leonard analyses Hong Kong's five-year development blueprint, focusing on digital economy targets, AI infrastructure, and the city's role as a global tech hub.",
+        "body": "",
+        "coverImage": "",
+        "category": "Policy",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      },
+      {
+        "id": 2,
+        "type": "article",
+        "slug": "sha-ling-data-park-the-engine-of-hks-ai-future",
+        "title": "Sha Ling Data Park: The Engine of HK's AI Future",
+        "excerpt": "An in-depth look at the Sha Ling Data Park project and its potential to position Hong Kong as a leading AI data infrastructure hub.",
+        "body": "",
+        "coverImage": "",
+        "category": "Technology",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      },
+      {
+        "id": 3,
+        "type": "article",
+        "slug": "2026-27-budget-opportunities-for-the-digital-economy",
+        "title": "2026-27 Budget: Opportunities for the Digital Economy",
+        "excerpt": "Response to the 2026-27 Budget, highlighting digital economy opportunities and recommendations for the ICT sector.",
+        "body": "",
+        "coverImage": "",
+        "category": "Policy",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 3,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      },
+      {
+        "id": 4,
+        "type": "article",
+        "slug": "ai-safety-and-competitiveness-hong-kongs-unique-advantage",
+        "title": "AI Safety and Competitiveness: Hong Kong's Unique Advantage",
+        "excerpt": "How Hong Kong can leverage its unique regulatory environment to become a global leader in responsible AI governance.",
+        "body": "",
+        "coverImage": "",
+        "category": "AI Governance",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 4,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      },
+      {
+        "id": 5,
+        "type": "article",
+        "slug": "physical-ai-and-new-industrialisation",
+        "title": "Physical AI and New Industrialisation",
+        "excerpt": "Exploring how physical AI — robots, autonomous systems, and smart manufacturing — will drive the next wave of industrialisation.",
+        "body": "",
+        "coverImage": "",
+        "category": "Technology",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 5,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      },
+      {
+        "id": 6,
+        "type": "article",
+        "slug": "gba-super-connector-hong-kongs-digital-role",
+        "title": "GBA Super Connector: Hong Kong's Digital Role",
+        "excerpt": "Hong Kong's strategic role as a digital super-connector bridging mainland China and the international community in the GBA.",
+        "body": "",
+        "coverImage": "",
+        "category": "GBA",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 6,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      },
+      {
+        "id": 7,
+        "type": "article",
+        "slug": "new-cybersecurity-threats-how-enterprises-respond",
+        "title": "New Cybersecurity Threats: How Enterprises Respond",
+        "excerpt": "A practical guide for enterprises navigating the evolving cybersecurity landscape, including AI-powered threats and zero-trust architectures.",
+        "body": "",
+        "coverImage": "",
+        "category": "Cybersecurity",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 7,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      },
+      {
+        "id": 8,
+        "type": "article",
+        "slug": "steam-education-nurturing-hks-next-tech-generation",
+        "title": "STEAM Education: Nurturing HK's Next Tech Generation",
+        "excerpt": "Why STEAM education is critical for Hong Kong's future and how industry, academia, and government must collaborate.",
+        "body": "",
+        "coverImage": "",
+        "category": "Education",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 8,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      },
+      {
+        "id": 9,
+        "type": "article",
+        "slug": "digital-identity-and-privacy-finding-the-balance",
+        "title": "Digital Identity and Privacy: Finding the Balance",
+        "excerpt": "Examining the tension between digital identity systems and personal privacy, with policy recommendations for Hong Kong.",
+        "body": "",
+        "coverImage": "",
+        "category": "Policy",
+        "tags": "[]",
+        "author": "Leonard Chan",
+        "status": "published",
+        "publishedAt": null,
+        "sortOrder": 9,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:28.000Z",
+        "updatedAt": "2026-03-27T20:33:28.000Z"
+      }
+    ],
+    "engagements": [
+      {
+        "id": 1,
+        "eventName": "Now TV — Technology Commentary",
+        "venue": null,
+        "eventDate": null,
+        "role": null,
+        "description": null,
+        "eventUrl": null,
+        "imageUrl": null,
+        "isUpcoming": 0,
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 2,
+        "eventName": "HKICT Awards — Judging Panel",
+        "venue": null,
+        "eventDate": null,
+        "role": null,
+        "description": null,
+        "eventUrl": null,
+        "imageUrl": null,
+        "isUpcoming": 0,
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 3,
+        "eventName": "WIC World Internet Conference",
+        "venue": null,
+        "eventDate": null,
+        "role": null,
+        "description": null,
+        "eventUrl": null,
+        "imageUrl": null,
+        "isUpcoming": 0,
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 4,
+        "eventName": "APICTA Annual Conference",
+        "venue": null,
+        "eventDate": null,
+        "role": null,
+        "description": null,
+        "eventUrl": null,
+        "imageUrl": null,
+        "isUpcoming": 0,
+        "sortOrder": 3,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 5,
+        "eventName": "Lingnan University — Guest Lecture",
+        "venue": null,
+        "eventDate": null,
+        "role": null,
+        "description": null,
+        "eventUrl": null,
+        "imageUrl": null,
+        "isUpcoming": 0,
+        "sortOrder": 4,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 6,
+        "eventName": "TIA Annual Dinner — Keynote",
+        "venue": null,
+        "eventDate": null,
+        "role": null,
+        "description": null,
+        "eventUrl": null,
+        "imageUrl": null,
+        "isUpcoming": 0,
+        "sortOrder": 5,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 7,
+        "eventName": "HKSAR Innovation & Technology Summit",
+        "venue": null,
+        "eventDate": null,
+        "role": null,
+        "description": null,
+        "eventUrl": null,
+        "imageUrl": null,
+        "isUpcoming": 0,
+        "sortOrder": 6,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 8,
+        "eventName": "Communication University of China — Lecture",
+        "venue": null,
+        "eventDate": null,
+        "role": null,
+        "description": null,
+        "eventUrl": null,
+        "imageUrl": null,
+        "isUpcoming": 0,
+        "sortOrder": 7,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "AIRDI — AI Research & Development",
+        "description": "As Board Member of the Artificial Intelligence Research and Development Institute, contributing to Hong Kong's national AI governance framework, research agenda, and policy recommendations for responsible AI development.",
+        "imageUrl": null,
+        "tags": "AI Governance,Policy,Research",
+        "projectUrl": "https://www.airdi.org.hk",
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 2,
+        "title": "HKITDA Industry Advocacy",
+        "description": "As President of HKITDA, led major industry advocacy campaigns for Hong Kong's ICT sector, including talent development, regulatory reform, and GBA digital integration.",
+        "imageUrl": null,
+        "tags": "Industry,Advocacy,Leadership",
+        "projectUrl": "https://www.hkitda.org",
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 3,
+        "title": "TIA Digital Economy Initiative",
+        "description": "Chairs the Technology Industry Alliance, driving collective industry action on digital economy policy, talent pipeline, and international connectivity.",
+        "imageUrl": null,
+        "tags": "Digital Economy,Industry,Policy",
+        "projectUrl": "https://www.tia.org.hk",
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 4,
+        "title": "UN World Summit Award",
+        "description": "Won the prestigious UN World Summit Award in the m-Media & News category — recognising innovative digital media solutions with global social impact.",
+        "imageUrl": null,
+        "tags": "UN Award,Digital Media,Innovation",
+        "projectUrl": "https://www.wsis.org",
+        "sortOrder": 3,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 5,
+        "title": "Embroidery CAD/CAM Patent",
+        "description": "Holds a patent for an embroidery CAD/CAM system that converts XY coordinates of embroidery designs into scalable digital data — an early example of industrial digitisation.",
+        "imageUrl": null,
+        "tags": "Patent,CAD/CAM,Innovation",
+        "projectUrl": "https://patents.google.com",
+        "sortOrder": 4,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 6,
+        "title": "Project Prove",
+        "description": "Pioneered digital identity verification solutions for Hong Kong's financial and public services sectors — a precursor to today's digital ID infrastructure.",
+        "imageUrl": null,
+        "tags": "Digital Identity,FinTech,GovTech",
+        "projectUrl": "#",
+        "sortOrder": 5,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 7,
+        "title": "HKICT Award Judging System",
+        "description": "Designed and built the cloud-based real-time scoring and judging system for the Hong Kong ICT Awards — now used by approximately 100 awards locally and internationally.",
+        "imageUrl": null,
+        "tags": "Platform,Cloud,Awards",
+        "projectUrl": "https://www.hkictawards.hk",
+        "sortOrder": 6,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      }
+    ],
+    "socialPosts": [
+      {
+        "id": 1,
+        "platform": "Facebook",
+        "content": "Deeply honoured to receive the Medal of Honour (MH) from the HKSAR Government. This recognition belongs to every colleague, partner, and mentor who has walked this journey with me. Hong Kong's digital future is bright — and we build it together.",
+        "postUrl": "https://facebook.com/drchan",
+        "imageUrl": null,
+        "engagementCount": 0,
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 2,
+        "platform": "LinkedIn",
+        "content": "Honoured to join the Board of the Artificial Intelligence Research and Development Institute (AIRDI). AI governance is not just about rules — it's about building trust. Hong Kong has a unique opportunity to lead the world in responsible AI.",
+        "postUrl": "https://linkedin.com/in/leonardchan",
+        "imageUrl": null,
+        "engagementCount": 0,
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 3,
+        "platform": "Facebook",
+        "content": "Hong Kong's five-year plan is a digital blueprint. My latest column in Takungpao analyses the three major digital economy pillars: AI governance, GBA integration, and new industrialisation.",
+        "postUrl": "https://facebook.com/drchan",
+        "imageUrl": null,
+        "engagementCount": 0,
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      }
+    ],
+    "tvAppearances": [
+      {
+        "id": 1,
+        "title": "Technology Commentary",
+        "channel": "Now TV",
+        "airDate": "2025-2026",
+        "thumbnailUrl": null,
+        "videoUrl": null,
+        "description": null,
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 2,
+        "title": "Column",
+        "channel": "Takungpao",
+        "airDate": "2020-Present",
+        "thumbnailUrl": null,
+        "videoUrl": null,
+        "description": null,
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      },
+      {
+        "id": 3,
+        "title": "Column",
+        "channel": "Capital",
+        "airDate": "2022-Present",
+        "thumbnailUrl": null,
+        "videoUrl": null,
+        "description": null,
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:33:56.000Z",
+        "updatedAt": "2026-03-27T20:33:56.000Z"
+      }
+    ],
+    "awards": [],
+    "affiliations": [
+      {
+        "id": 1,
+        "name": "British Computer Society",
+        "role": "Chartered Fellow",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/logos/bcs.png",
+        "websiteUrl": "https://www.bcs.org",
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 2,
+        "name": "Chinese Computer Federation",
+        "role": "Eminent Distinguished Member",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/logos/ccf.jpg",
+        "websiteUrl": "https://www.ccf.org.cn",
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 3,
+        "name": "HK Computer Society",
+        "role": "Fellow",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/logos/hkcs.png",
+        "websiteUrl": "https://www.hkcs.org.hk",
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 4,
+        "name": "HK Institute of Directors",
+        "role": "Fellow",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/logos/hkiod.png",
+        "websiteUrl": "https://www.hkiod.com",
+        "sortOrder": 3,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 5,
+        "name": "ACM",
+        "role": "Senior Member",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/logos/acm.png",
+        "websiteUrl": "https://www.acm.org",
+        "sortOrder": 4,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 6,
+        "name": "HKIRC",
+        "role": "Deputy Chairman",
+        "logoUrl": null,
+        "websiteUrl": "https://www.hkirc.hk",
+        "sortOrder": 5,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 7,
+        "name": "HKITDA",
+        "role": "Founding Chairman",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/logos/hkitda.png",
+        "websiteUrl": "https://www.hkitda.org",
+        "sortOrder": 6,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 8,
+        "name": "HK Software Industry Assoc.",
+        "role": "Past Vice Chairman",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/logos/hksia.png",
+        "websiteUrl": "https://www.hksia.org",
+        "sortOrder": 7,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      }
+    ],
+    "timelineEntries": [
+      {
+        "id": 1,
+        "year": "1994",
+        "title": "1994",
+        "description": "Entered the technology industry in Hong Kong, beginning a 30+ year journey in digital innovation.",
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 2,
+        "year": "2001",
+        "title": "2001",
+        "description": "Awarded US Patent for Embroidery CAD/CAM System — pioneering industrial automation technology.",
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 3,
+        "year": "2011",
+        "title": "2011",
+        "description": "First double APICTA winner in Hong Kong history — New Media & Entertainment and Start-up Company.",
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 4,
+        "year": "2015",
+        "title": "2015",
+        "description": "Pioneered digital identity verification — Project Prove for Hong Kong's financial and public services.",
+        "sortOrder": 3,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 5,
+        "year": "2016",
+        "title": "2016",
+        "description": "Won the UN WSA in m-Media & News category — global recognition for digital innovation.",
+        "sortOrder": 4,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 6,
+        "year": "2018",
+        "title": "2018",
+        "description": "Appointed Deputy Director of the Center for Hong Kong, Macao, Taiwan and World Affairs Studies at Communication University of China (CUC, Beijing).",
+        "sortOrder": 5,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 7,
+        "year": "2020",
+        "title": "2020",
+        "description": "Appointed to the Court of Lingnan University, contributing to governance and strategic development.",
+        "sortOrder": 6,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 8,
+        "year": "2021",
+        "title": "2021",
+        "description": "Founded the Hong Kong Innovative Technology Development Association — advancing Hong Kong's innovation ecosystem.",
+        "sortOrder": 7,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 9,
+        "year": "2023",
+        "title": "2023",
+        "description": "Appointed Ordinary Member and Chairman of the Development Committee of the Travel Industry Authority (TIA).",
+        "sortOrder": 8,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 10,
+        "year": "2024",
+        "title": "2024",
+        "description": "Founded tag.digital — a leading digital transformation consultancy in Hong Kong and the GBA.",
+        "sortOrder": 9,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 11,
+        "year": "2024",
+        "title": "2024",
+        "description": "Appointed Deputy Chairman of Hong Kong Internet Registration Corporation.",
+        "sortOrder": 10,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 12,
+        "year": "2025",
+        "title": "2025",
+        "description": "Awarded the Medal of Honour (MH) by the HKSAR Government for distinguished public service.",
+        "sortOrder": 11,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 13,
+        "year": "2026",
+        "title": "2026",
+        "description": "Appointed to the Board of the Artificial Intelligence Research and Development Institute (AIRDI) — Hong Kong's premier AI R&D body established under the Innovation and Technology Bureau.",
+        "sortOrder": 12,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      }
+    ],
+    "yearReviews": [
+      {
+        "id": 1,
+        "year": 2025,
+        "title": "Year in Review 2025",
+        "description": "A five-minute visual journey through the highlights, milestones, and moments that defined 2025.",
+        "videoUrl": null,
+        "thumbnailUrl": null,
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 2,
+        "year": 2024,
+        "title": "Year in Review 2024",
+        "description": "Reflecting on a transformative year — founding tag.digital, the HKIRC Deputy Chairman appointment, and a year of deep engagement with AI policy and the Greater Bay Area.",
+        "videoUrl": null,
+        "thumbnailUrl": null,
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 3,
+        "year": 2023,
+        "title": "Year in Review 2023",
+        "description": "The year that launched this annual tradition — key events, speaking engagements, TIA chairmanship, and digital milestones captured in five minutes of photographs and reflection.",
+        "videoUrl": null,
+        "thumbnailUrl": null,
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      }
+    ],
+    "interestPhotos": [],
+    "genaiArt": [],
+    "mediaLogos": [
+      {
+        "id": 1,
+        "name": "Takungpao",
+        "logoUrl": null,
+        "url": null,
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 2,
+        "name": "Capital",
+        "logoUrl": null,
+        "url": null,
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 3,
+        "name": "Now TV",
+        "logoUrl": null,
+        "url": null,
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 4,
+        "name": "HKICT Awards",
+        "logoUrl": "https://pub-f980f47725294fa181969ed1e02e6402.r2.dev/site-images/hkict-judging_a07e4e12.jpg",
+        "url": null,
+        "sortOrder": 3,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 5,
+        "name": "UN WSA",
+        "logoUrl": null,
+        "url": null,
+        "sortOrder": 4,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      }
+    ],
+    "profilePhotos": [],
+    "siteStats": [
+      {
+        "id": 1,
+        "label": "Years in Technology",
+        "value": "30",
+        "icon": null,
+        "suffix": "+",
+        "sortOrder": 0,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 2,
+        "label": "Published Articles",
+        "value": "100",
+        "icon": null,
+        "suffix": "+",
+        "sortOrder": 1,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 3,
+        "label": "Public Appointments",
+        "value": "20",
+        "icon": null,
+        "suffix": "+",
+        "sortOrder": 2,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      },
+      {
+        "id": 4,
+        "label": "Years of Public Service",
+        "value": "15",
+        "icon": null,
+        "suffix": "+",
+        "sortOrder": 3,
+        "isActive": 1,
+        "createdAt": "2026-03-27T20:34:26.000Z",
+        "updatedAt": "2026-03-27T20:34:26.000Z"
+      }
+    ]
+  },
+  "generatedAt": "2026-03-27T20:48:07.282Z"
+}
