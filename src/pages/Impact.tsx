@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { ChevronLeft, ChevronRight, ExternalLink, ImageOff } from 'lucide-react'
 import { useParallaxBg } from '../hooks/useParallax'
 
-const CMS_API = 'https://cms-api.leonardchan.com/api'
+import { useModule } from '../hooks/useCmsData'
 
 function useReveal() {
   useEffect(() => {
@@ -16,25 +16,13 @@ function useReveal() {
   }, [])
 }
 
-function useSocialPosts(lang: string) {
-  const [items, setItems] = useState<any[]>([])
-  useEffect(() => {
-    fetch(`${CMS_API}/social-posts/public/list?lang=${lang}`)
-      .then(r => r.json())
-      .then(d => setItems(d.items || []))
-      .catch(() => {})
-  }, [lang])
+function useSocialPosts() {
+  const { items } = useModule('socialPosts')
   return items
 }
 
-function useProjects(lang: string) {
-  const [items, setItems] = useState<any[]>([])
-  useEffect(() => {
-    fetch(`${CMS_API}/projects/public/list?lang=${lang}`)
-      .then(r => r.json())
-      .then(d => setItems(d.items || []))
-      .catch(() => {})
-  }, [lang])
+function useProjects() {
+  const { items } = useModule('projects')
   return items
 }
 
@@ -123,8 +111,8 @@ export default function Impact() {
   const { ref: statsRef, bgPos: statsBgPos } = useParallaxBg(0.2)
   const { ref: communityRef, bgPos: communityBgPos } = useParallaxBg(0.2)
 
-  const socialPosts = useSocialPosts(i18n.language)
-  const projects = useProjects(i18n.language)
+  const socialPosts = useSocialPosts()
+  const projects = useProjects()
 
   const totalPosts = socialPosts.length
   const prev = () => setCurrent(c => (c - 1 + Math.max(totalPosts, 1)) % Math.max(totalPosts, 1))

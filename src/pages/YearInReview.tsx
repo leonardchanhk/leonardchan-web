@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Video, ExternalLink, Calendar } from 'lucide-react'
 
-const CMS_API = 'https://cms-api.leonardchan.com/api'
+import { useModule } from '../hooks/useCmsData'
 
 function useReveal() {
   useEffect(() => {
@@ -15,14 +15,8 @@ function useReveal() {
   }, [])
 }
 
-function useYearInReview(lang: string) {
-  const [items, setItems] = useState<any[]>([])
-  useEffect(() => {
-    fetch(`${CMS_API}/year-in-review/public/list?lang=${lang}`)
-      .then(r => r.json())
-      .then(d => setItems(d.items || []))
-      .catch(() => {})
-  }, [lang])
+function useYearInReview() {
+  const { items } = useModule('yearInReview')
   return items
 }
 
@@ -30,7 +24,7 @@ export default function YearInReview() {
   const { t } = useTranslation()
   useReveal()
   const { i18n } = useTranslation()
-  const videos = useYearInReview(i18n.language)
+  const videos = useYearInReview()
 
   return (
     <>

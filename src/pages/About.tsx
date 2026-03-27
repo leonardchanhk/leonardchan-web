@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { Linkedin, Award, BookOpen, Users, Briefcase, ExternalLink } from 'lucide-react'
 import { useParallaxBg } from '../hooks/useParallax'
 
-const CMS_API = 'https://cms-api.leonardchan.com'
+import { useModule } from '../hooks/useCmsData'
 
 interface TimelineEntry {
   id: number
@@ -53,32 +53,16 @@ function useReveal(deps: any[] = []) {
 
 export default function About() {
   const { t, i18n } = useTranslation()
-  const [timelinePosts, setTimelinePosts] = useState<TimelineEntry[]>([])
-  const [affiliations, setAffiliations] = useState<AffiliationEntry[]>([])
-  const [awards, setAwards] = useState<AwardEntry[]>([])
+  const { items: timelinePosts } = useModule('timelineEntries')
+  const { items: affiliations } = useModule('affiliations')
+  const { items: awards } = useModule('awards')
   useReveal([timelinePosts, affiliations, awards])
   const { ref: heroParallaxRef, bgPos: heroBgPos } = useParallaxBg(0.3)
   const { ref: ctaParallaxRef, bgPos: ctaBgPos } = useParallaxBg(0.2)
 
   const currentLang = i18n.language
 
-  // Fetch all CMS data in parallel
-  useEffect(() => {
-    fetch(`${CMS_API}/api/timeline/public/list`)
-      .then(r => r.json())
-      .then((data: any) => setTimelinePosts(data.entries || []))
-      .catch(() => {})
-
-    fetch(`${CMS_API}/api/affiliations/public/list`)
-      .then(r => r.json())
-      .then((data: any) => setAffiliations(data.affiliations || []))
-      .catch(() => {})
-
-    fetch(`${CMS_API}/api/affiliations/awards/public/list`)
-      .then(r => r.json())
-      .then((data: any) => setAwards(data.awards || []))
-      .catch(() => {})
-  }, [])
+  // CMS data loaded via useCmsData hooks above
 
   function getTimelineText(entry: TimelineEntry): string {
     if (currentLang === 'tc') return entry.text_tc || entry.text_en

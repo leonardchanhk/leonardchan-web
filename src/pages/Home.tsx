@@ -7,16 +7,9 @@ import { useParallaxBg } from '../hooks/useParallax'
 import TiltCard from '../components/TiltCard'
 import MagneticButton from '../components/MagneticButton'
 
-const CMS_API = 'https://cms-api.leonardchan.com/api'
-
-function useSiteStats(lang: string) {
-  const [items, setItems] = useState<any[]>([])
-  useEffect(() => {
-    fetch(`${CMS_API}/site-stats/public/list?lang=${lang}`)
-      .then(r => r.json())
-      .then(d => setItems(d.items || []))
-      .catch(() => {})
-  }, [lang])
+import { useModule } from '../hooks/useCmsData'
+function useSiteStats() {
+  const { items } = useModule('siteStats')
   return items
 }
 
@@ -152,7 +145,7 @@ export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [statsVisible, setStatsVisible] = useState(false)
   const statsRef = useRef<HTMLDivElement>(null)
-  const cmsStats = useSiteStats(i18n.language)
+  const cmsStats = useSiteStats()
 
   // Parallax for mid-page dark sections
   const { ref: parallaxOpportRef, bgPos: opportunitiesBgPos } = useParallaxBg(0.25)

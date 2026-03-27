@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Mic, ArrowRight, Bot, Globe, ShieldCheck, Zap, GraduationCap, Landmark, Calendar, MapPin } from 'lucide-react'
 import { useParallaxBg } from '../hooks/useParallax'
 
-const CMS_API = 'https://cms-api.leonardchan.com/api'
+import { useModule } from '../hooks/useCmsData'
 
 function useReveal() {
   useEffect(() => {
@@ -26,14 +26,8 @@ const TOPIC_KEYS = [
   { key: 'internet', Icon: Landmark, img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80', accent: 'from-gray-800/80 to-gray-950/90' },
 ]
 
-function useEngagements(lang: string) {
-  const [items, setItems] = useState<any[]>([])
-  useEffect(() => {
-    fetch(`${CMS_API}/engagements/public/list?lang=${lang}`)
-      .then(r => r.json())
-      .then(d => setItems(d.items || []))
-      .catch(() => {})
-  }, [lang])
+function useEngagements() {
+  const { items } = useModule('engagements')
   return items
 }
 
@@ -53,7 +47,7 @@ export default function Speaking() {
   useReveal()
   const { ref: heroRef, bgPos: heroBgPos } = useParallaxBg(0.25)
   const { ref: ctaRef, bgPos: ctaBgPos } = useParallaxBg(0.2)
-  const engagements = useEngagements(i18n.language)
+  const engagements = useEngagements()
 
   return (
     <>

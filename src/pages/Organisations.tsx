@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ExternalLink, Building2, GraduationCap, Landmark, Users, Briefcase, Globe } from 'lucide-react'
 
-const CMS_API = 'https://cms-api.leonardchan.com/api'
+import { useModule } from '../hooks/useCmsData'
 
 function useReveal() {
   useEffect(() => {
@@ -55,14 +55,8 @@ const CAT_ACCENTS: Record<string, string> = {
   Community: 'from-blue-600 to-sky-400',
 }
 
-function useOrganisations(lang: string) {
-  const [items, setItems] = useState<any[]>([])
-  useEffect(() => {
-    fetch(`${CMS_API}/organisations/public/list?lang=${lang}`)
-      .then(r => r.json())
-      .then(d => setItems(d.items || []))
-      .catch(() => {})
-  }, [lang])
+function useOrganisations() {
+  const { items } = useModule('organisations')
   return items
 }
 
@@ -70,7 +64,7 @@ export default function Organisations() {
   const { t, i18n } = useTranslation()
   useReveal()
   const [filter, setFilter] = useState<OrgCategory>('All')
-  const orgs = useOrganisations(i18n.language)
+  const orgs = useOrganisations()
 
   const filtered = filter === 'All' ? orgs : orgs.filter(o => o.category === filter)
 

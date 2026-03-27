@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ExternalLink, Search, Tv, Quote, Lightbulb, GraduationCap, Compass, Globe, Loader2 } from 'lucide-react'
 
-const CMS_API = 'https://cms-api.leonardchan.com'
+import { useModule } from '../hooks/useCmsData'
 
 function useReveal() {
   useEffect(() => {
@@ -31,14 +31,8 @@ const CAT_IMAGES: Record<string, string> = {
   'default': 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80',
 }
 
-function useTvAppearances(lang: string) {
-  const [items, setItems] = useState<any[]>([])
-  useEffect(() => {
-    fetch(`${CMS_API}/api/tv-appearances/public/list?lang=${lang}`)
-      .then(r => r.json())
-      .then(d => setItems(d.items || []))
-      .catch(() => {})
-  }, [lang])
+function useTvAppearances() {
+  const { items } = useModule('tvAppearances')
   return items
 }
 
@@ -101,19 +95,14 @@ export default function Insights() {
   useReveal()
 
   const currentLang = i18n.language // 'en', 'tc', or 'sc'
-  const tvAppearances = useTvAppearances(currentLang)
+  const tvAppearances = useTvAppearances()
 
-  // Fetch articles from the new posts API
+  // Load posts from CMS data
+  const { items: cmsPosts } = useModule('posts')
   useEffect(() => {
-    setPostsLoading(true)
-    fetch(`${CMS_API}/api/posts/public/list?type=article&limit=50`)
-      .then(r => r.json())
-      .then((data: any) => {
-        setPosts(data.posts || [])
-      })
-      .catch(() => {})
-      .finally(() => setPostsLoading(false))
-  }, [])
+    setPosts(cmsPosts as any[])
+    setPostsLoading(false)
+  }, [cmsPosts])
 
   const articles = posts.map((p, idx) => {
     const tagData = parseTags(p.tags)
