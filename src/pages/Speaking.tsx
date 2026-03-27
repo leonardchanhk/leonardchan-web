@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Mic, ArrowRight, Bot, Globe, ShieldCheck, Zap, GraduationCap, Landmark, Calendar, MapPin } from 'lucide-react'
@@ -43,7 +43,7 @@ const TYPE_COLORS: Record<string, string> = {
 const FORMAT_KEYS = ['keynotes', 'panels', 'media', 'workshops', 'lectures'] as const
 
 export default function Speaking() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   useReveal()
   const { ref: heroRef, bgPos: heroBgPos } = useParallaxBg(0.25)
   const { ref: ctaRef, bgPos: ctaBgPos } = useParallaxBg(0.2)

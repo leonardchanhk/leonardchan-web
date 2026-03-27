@@ -141,7 +141,7 @@ const ACHIEVEMENT_KEYS = [
 ]
 
 export default function Home() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [statsVisible, setStatsVisible] = useState(false)
   const statsRef = useRef<HTMLDivElement>(null)

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { Linkedin, Award, BookOpen, Users, Briefcase, ExternalLink } from 'lucide-react'

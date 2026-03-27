@@ -61,7 +61,7 @@ function useOrganisations() {
 }
 
 export default function Organisations() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   useReveal()
   const [filter, setFilter] = useState<OrgCategory>('All')
   const orgs = useOrganisations()

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Video, ExternalLink, Calendar } from 'lucide-react'
 
@@ -23,7 +23,6 @@ function useYearInReview() {
 export default function YearInReview() {
   const { t } = useTranslation()
   useReveal()
-  const { i18n } = useTranslation()
   const videos = useYearInReview()
 
   return (

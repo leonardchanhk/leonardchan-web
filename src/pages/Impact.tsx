@@ -105,7 +105,7 @@ function ProjectCard({ p, i }: { p: Project; i: number }) {
 }
 
 export default function Impact() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const [current, setCurrent] = useState(0)
   useReveal()
   const { ref: statsRef, bgPos: statsBgPos } = useParallaxBg(0.2)
