@@ -52,19 +52,19 @@ type Project = {
   status: string
   description: string
   url: string
-  photo_url?: string
+  imageUrl?: string
   tags: string[]
-  accent_color: string
+  accentColor: string
 }
 
 function ProjectCard({ p, i }: { p: Project; i: number }) {
   const { t } = useTranslation()
   return (
-    <article className={`reveal card-lift bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 border-l-4 ${p.accent_color || 'border-blue-500/40'} flex flex-col`}>
+    <article className={`reveal card-lift bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-800 border-l-4 ${p.accentColor || 'border-blue-500/40'} flex flex-col`}>
       {/* 1:1 Photo */}
       <div className="relative w-full aspect-square bg-gray-100 dark:bg-gray-800 overflow-hidden">
-        {p.photo_url ? (
-          <img src={p.photo_url} alt={`${p.title} — project photo`} className="w-full h-full object-cover" loading={i < 4 ? 'eager' : 'lazy'} />
+        {p.imageUrl ? (
+          <img src={p.imageUrl} alt={`${p.title} — project photo`} className="w-full h-full object-cover" loading={i < 4 ? 'eager' : 'lazy'} />
         ) : (
           <div className="w-full h-full flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
             <div className="w-16 h-16 rounded-2xl bg-blue-600/10 flex items-center justify-center">
@@ -82,8 +82,8 @@ function ProjectCard({ p, i }: { p: Project; i: number }) {
             'bg-gray-600 text-white'
           }`}>{p.status}</span>
         </div>
-        {p.url && p.url !== '#' && (
-          <a href={p.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${p.title}`}
+        {p.projectUrl && p.projectUrl !== '#' && (
+          <a href={p.projectUrl} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${p.title}`}
             className="absolute top-3 right-3 w-8 h-8 bg-white/90 dark:bg-gray-900/90 rounded-lg flex items-center justify-center text-gray-500 hover:text-blue-600 transition-colors shadow-sm">
             <ExternalLink size={13} />
           </a>
@@ -138,7 +138,7 @@ export default function Impact() {
               <div className="mb-6">
                 <span className={`text-xs font-bold uppercase tracking-widest ${PLATFORM_ACCENTS[post.platform] || 'text-blue-400'}`}>{post.platform}</span>
                 <span className="text-gray-500 mx-2">·</span>
-                <span className="text-gray-400 text-xs">{post.post_date}</span>
+                <span className="text-gray-400 text-xs">{post.postDate}</span>
               </div>
 
               <h2 className="font-brand font-bold text-white mb-6" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: 1.1 }}>
@@ -155,8 +155,8 @@ export default function Impact() {
                 {post.comments && <span className="text-sm text-gray-400">💬 {post.comments}</span>}
               </div>
 
-              {post.url && (
-                <a href={post.url} target="_blank" rel="noopener noreferrer"
+              {post.postUrl && (
+                <a href={post.postUrl} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-blue-400 hover:text-blue-300 transition-colors">
                   {t('impact_page.view_on')} {post.platform} <ExternalLink size={14} />
                 </a>

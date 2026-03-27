@@ -48,10 +48,10 @@ export default function YearInReview() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                 {/* Video embed */}
                 <div className="rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
-                  {video.vimeo_id ? (
+                  {video.vimeoId ? (
                     <div className="aspect-video">
                       <iframe
-                        src={`https://player.vimeo.com/video/${video.vimeo_id}?title=0&byline=0&portrait=0&color=3b82f6`}
+                        src={`https://player.vimeo.com/video/${video.vimeoId}?title=0&byline=0&portrait=0&color=3b82f6`}
                         className="w-full h-full"
                         allow="autoplay; fullscreen; picture-in-picture"
                         allowFullScreen
@@ -97,9 +97,9 @@ export default function YearInReview() {
                     </div>
                   )}
 
-                  {video.vimeo_id && (
+                  {video.vimeoId && (
                     <a
-                      href={`https://vimeo.com/${video.vimeo_id}`}
+                      href={`https://vimeo.com/${video.vimeoId}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors"

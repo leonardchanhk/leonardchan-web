@@ -260,7 +260,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
           {cmsStats.length > 0
             ? cmsStats.map((s: any) => (
-                <StatCounter key={s.id} stat={{ key: s.stat_key, value: parseInt(s.value) || 0, suffix: s.suffix || '+', icon: Award }} visible={statsVisible} label={s.label} />
+                <StatCounter key={s.id} stat={{ key: s.statKey || s.stat_key, value: parseInt(s.value) || 0, suffix: s.suffix || '+', icon: Award }} visible={statsVisible} label={s.label} />
               ))
             : STATS_FALLBACK.map(stat => (
                 <StatCounter key={stat.key} stat={stat} visible={statsVisible} label={t(`hero.${stat.key}`)} />

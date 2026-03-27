@@ -123,15 +123,15 @@ export default function Organisations() {
               const Icon = CAT_ICONS[org.category] || Globe
               const accent = CAT_ACCENTS[org.category] || 'from-blue-600 to-blue-400'
               return (
-                <article key={org.id || org.org_key} className="reveal group relative bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-2 flex flex-col border border-gray-100 dark:border-gray-800">
+                <article key={org.id} className="reveal group relative bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-2 flex flex-col border border-gray-100 dark:border-gray-800">
                   <div className={`relative h-44 bg-gradient-to-br ${accent} flex items-center justify-center overflow-hidden flex-shrink-0`}>
                     <div className="absolute inset-0 opacity-15" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-40 h-40 rounded-full bg-white/10 blur-2xl" />
                     </div>
-                    {org.logo_url ? (
+                    {org.logoUrl ? (
                       <div className="relative z-10 w-40 h-24 rounded-2xl bg-white shadow-xl flex items-center justify-center p-4 group-hover:scale-105 transition-transform duration-400">
-                        <img src={org.logo_url} alt={org.name} className="max-h-16 max-w-full object-contain" loading="lazy" />
+                        <img src={org.logoUrl} alt={org.name} className="max-h-16 max-w-full object-contain" loading="lazy" />
                       </div>
                     ) : (
                       <div className="relative z-10 w-20 h-20 rounded-3xl bg-white/20 backdrop-blur-sm border-2 border-white/40 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
@@ -146,8 +146,8 @@ export default function Organisations() {
                     <h2 className="font-brand font-bold text-gray-900 dark:text-white text-lg mb-1 leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{org.name}</h2>
                     <p className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3 tracking-wide uppercase" style={{ fontSize: '0.7rem', letterSpacing: '0.08em' }}>{org.role}</p>
                     <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-5 flex-1">{org.description}</p>
-                    {org.website_url && org.website_url !== '#' && (
-                      <a href={org.website_url} target="_blank" rel="noopener noreferrer" aria-label={`${t('organisations_page.visit_website')}: ${org.name}`}
+                    {org.websiteUrl && org.websiteUrl !== '#' && (
+                      <a href={org.websiteUrl} target="_blank" rel="noopener noreferrer" aria-label={`${t('organisations_page.visit_website')}: ${org.name}`}
                         className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors group/link">
                         {t('organisations_page.visit_website')} <ExternalLink size={13} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
                       </a>

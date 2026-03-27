@@ -47,30 +47,30 @@ interface Post {
   slug: string
   type: string
   status: string
-  cover_image: string | null
+  coverImage: string | null
   category: string | null
   tags: string | null
   author: string | null
-  published_at: string | null
-  sort_order: number
-  title_en: string
-  title_tc: string
-  title_sc: string
-  excerpt_en: string
-  excerpt_tc: string
-  excerpt_sc: string
+  publishedAt: string | null
+  sortOrder: number
+  titleEn: string
+  titleTc: string
+  titleSc: string
+  excerptEn: string
+  excerptTc: string
+  excerptSc: string
 }
 
 function getPostTitle(post: Post, lang: string): string {
-  if (lang === 'tc') return post.title_tc || post.title_en
-  if (lang === 'sc') return post.title_sc || post.title_tc || post.title_en
-  return post.title_en
+  if (lang === 'tc') return post.titleTc || post.titleEn
+  if (lang === 'sc') return post.titleSc || post.titleTc || post.titleEn
+  return post.titleEn
 }
 
 function getPostExcerpt(post: Post, lang: string): string {
-  if (lang === 'tc') return post.excerpt_tc || post.excerpt_en
-  if (lang === 'sc') return post.excerpt_sc || post.excerpt_tc || post.excerpt_en
-  return post.excerpt_en
+  if (lang === 'tc') return post.excerptTc || post.excerptEn
+  if (lang === 'sc') return post.excerptSc || post.excerptTc || post.excerptEn
+  return post.excerptEn
 }
 
 function formatDate(dateStr: string | null): string {
@@ -109,11 +109,11 @@ export default function Insights() {
     return {
       ...p,
       title: getPostTitle(p, currentLang),
-      titleZh: p.title_tc || p.title_en,
+      titleZh: p.titleTc || p.titleEn,
       summary: getPostExcerpt(p, currentLang),
       cat: p.category || 'Technology',
-      date: formatDate(p.published_at),
-      img: p.cover_image || CAT_IMAGES[p.category || ''] || CAT_IMAGES['default'],
+      date: formatDate(p.publishedAt),
+      img: p.coverImage || CAT_IMAGES[p.category || ''] || CAT_IMAGES['default'],
       originalLang: 'zh',
       pub: tagData.pub || '',
       url: tagData.url || '#',
@@ -312,8 +312,8 @@ export default function Insights() {
               {tvAppearances.map((tv: any, idx: number) => (
                 <article key={tv.id || idx} className="reveal group bg-white dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1">
                   <div className="relative h-44 overflow-hidden bg-gray-200 dark:bg-gray-700">
-                    {tv.thumbnail_url ? (
-                      <img src={tv.thumbnail_url} alt={tv.topic || tv.program} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    {tv.thumbnailUrl ? (
+                      <img src={tv.thumbnailUrl} alt={tv.topic || tv.program} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                         <Tv size={40} className="text-gray-600" />
@@ -331,7 +331,7 @@ export default function Insights() {
                     </div>
                   </div>
                   <div className="p-5">
-                    <p className="text-xs text-blue-600 font-semibold mb-1">{tv.program} · {tv.air_date}</p>
+                    <p className="text-xs text-blue-600 font-semibold mb-1">{tv.program} · {tv.airDate}</p>
                     <h3 className="font-bold text-gray-900 dark:text-white text-sm mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">{tv.topic}</h3>
                     {tv.url && (
                       <a href={tv.url} target="_blank" rel="noopener noreferrer" aria-label={`${t('insights_page.watch_interview')}: ${tv.topic}`}

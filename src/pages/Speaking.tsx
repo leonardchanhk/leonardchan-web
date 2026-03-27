@@ -123,9 +123,9 @@ export default function Speaking() {
                     <Mic size={15} className="text-blue-600" />
                   </div>
                   <div className="min-w-0">
-                    <span className="font-semibold text-gray-900 dark:text-white text-sm block truncate group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{e.event_name || e.event_name_en}</span>
+                    <span className="font-semibold text-gray-900 dark:text-white text-sm block truncate group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{e.eventName}</span>
                     <span className="flex items-center gap-1 text-xs text-gray-400 mt-0.5">
-                      <MapPin size={10} /> {e.location || e.location_en}
+                      <MapPin size={10} /> {e.venue}
                     </span>
                   </div>
                 </div>

@@ -9,34 +9,27 @@ import { useModule } from '../hooks/useCmsData'
 interface TimelineEntry {
   id: number
   year: number
-  sort_order: number
-  text_en: string
-  text_tc: string
-  text_sc: string
+  sortOrder: number
+  description: string
+  title: string
 }
 
 interface AffiliationEntry {
   id: number
   name: string
-  role_en: string
-  role_tc: string
-  role_sc: string
-  logo_url: string | null
-  website_url: string | null
-  sort_order: number
+  role: string
+  logoUrl: string | null
+  websiteUrl: string | null
+  sortOrder: number
 }
 
 interface AwardEntry {
   id: number
-  title_en: string
-  title_tc: string
-  title_sc: string
-  organisation_en: string
-  organisation_tc: string
-  organisation_sc: string
+  title: string
+  organisation: string
   year: number | null
-  logo_url: string | null
-  sort_order: number
+  logoUrl: string | null
+  sortOrder: number
 }
 
 function useReveal(deps: any[] = []) {
@@ -65,27 +58,19 @@ export default function About() {
   // CMS data loaded via useCmsData hooks above
 
   function getTimelineText(entry: TimelineEntry): string {
-    if (currentLang === 'tc') return entry.text_tc || entry.text_en
-    if (currentLang === 'sc') return entry.text_sc || entry.text_tc || entry.text_en
-    return entry.text_en
+    return entry.description || entry.title || ''
   }
 
   function getAffRole(aff: AffiliationEntry): string {
-    if (currentLang === 'tc') return aff.role_tc || aff.role_en
-    if (currentLang === 'sc') return aff.role_sc || aff.role_tc || aff.role_en
-    return aff.role_en
+    return aff.role || ''
   }
 
   function getAwardTitle(aw: AwardEntry): string {
-    if (currentLang === 'tc') return aw.title_tc || aw.title_en
-    if (currentLang === 'sc') return aw.title_sc || aw.title_tc || aw.title_en
-    return aw.title_en
+    return aw.title || ''
   }
 
   function getAwardOrg(aw: AwardEntry): string {
-    if (currentLang === 'tc') return aw.organisation_tc || aw.organisation_en
-    if (currentLang === 'sc') return aw.organisation_sc || aw.organisation_tc || aw.organisation_en
-    return aw.organisation_en
+    return aw.organisation || ''
   }
 
   // Abbreviation fallback for logos
@@ -209,8 +194,8 @@ export default function About() {
             {awards.map((a) => (
               <div key={a.id} className="reveal card-lift bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 flex flex-col shadow-sm hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1">
                 <div className="h-32 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/40 dark:to-blue-900/20 flex items-center justify-center px-6 border-b border-gray-100 dark:border-gray-700">
-                  {a.logo_url
-                    ? <img src={a.logo_url} alt={getAwardOrg(a)} className="max-h-20 max-w-full object-contain" loading="lazy" />
+                  {a.logoUrl
+                    ? <img src={a.logoUrl} alt={getAwardOrg(a)} className="max-h-20 max-w-full object-contain" loading="lazy" />
                     : <span className="font-brand font-bold text-blue-600 dark:text-blue-400 text-lg tracking-wide">{abbr(getAwardOrg(a) || getAwardTitle(a))}</span>
                   }
                 </div>
@@ -233,8 +218,8 @@ export default function About() {
               {affiliations.map((a) => (
                 <div key={a.id} className="reveal card-lift bg-white dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700 flex flex-col items-center text-center gap-3 shadow-sm hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1">
                   <div className="h-20 w-full flex items-center justify-center">
-                    {a.logo_url
-                      ? <img src={a.logo_url} alt={a.name} className="max-h-16 max-w-full object-contain" loading="lazy" />
+                    {a.logoUrl
+                      ? <img src={a.logoUrl} alt={a.name} className="max-h-16 max-w-full object-contain" loading="lazy" />
                       : (
                         <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
                           <span className="text-white font-brand font-bold text-sm">{abbr(a.name)}</span>
