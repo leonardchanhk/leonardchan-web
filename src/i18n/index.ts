@@ -1,6 +1,6 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import LanguageDetector from 'i18next-browser-languagedetector'
+// LanguageDetector removed — English only for now
 
 const resources = {
   en: {
@@ -2271,77 +2271,16 @@ const resources = {
 }
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
+    lng: 'en',
     fallbackLng: 'en',
     defaultNS: 'translation',
-    detection: {
-      order: ['localStorage', 'navigator'],
-      lookupLocalStorage: 'lc_lang',
-      caches: ['localStorage'],
-    },
     interpolation: { escapeValue: false },
   })
-
-// Fetch CMS overrides and merge into i18n
-const CMS_API = 'https://cms-api.leonardchan.com/api/public'
-
-async function loadCmsContent(lang: string) {
-  try {
-    const res = await fetch(`${CMS_API}/content/${lang}`, { cache: 'default' })
-    if (!res.ok) return null
-    return await res.json() as Record<string, Record<string, string>>
-  } catch {
-    return null
-  }
-}
-
-async function applyCmsOverrides() {
-  const langs = ['en', 'tc', 'sc']
-  await Promise.all(langs.map(async (lang) => {
-    const cms = await loadCmsContent(lang)
-    if (!cms) return
-    for (const [section, items] of Object.entries(cms)) {
-      const bundle = i18n.getResourceBundle(lang, 'translation') || {}
-      const existing = bundle[section] || {}
-      // Expand dot-notation keys into nested objects
-      // e.g. { 'links.privacy': 'Privacy' } -> { links: { privacy: 'Privacy' } }
-      const expanded: Record<string, any> = {}
-      for (const [key, value] of Object.entries(items as Record<string, string>)) {
-        if (key.includes('.')) {
-          const parts = key.split('.')
-          let current = expanded
-          for (let i = 0; i < parts.length - 1; i++) {
-            if (!current[parts[i]] || typeof current[parts[i]] !== 'object') {
-              current[parts[i]] = {}
-            }
-            current = current[parts[i]]
-          }
-          current[parts[parts.length - 1]] = value
-        } else {
-          expanded[key] = value
-        }
-      }
-      i18n.addResourceBundle(lang, 'translation', {
-        [section]: { ...existing, ...expanded },
-      }, true, true)
-    }
-  }))
-}
-
-// Load CMS content in background — won't block initial render
-applyCmsOverrides()
-
-// Re-fetch when language changes
-i18n.on('languageChanged', () => {
-  applyCmsOverrides()
-})
 
 export default i18n
 export const LANGUAGES = [
   { code: 'en', label: 'EN', full: 'English' },
-  { code: 'tc', label: '繁', full: '繁體中文' },
-  { code: 'sc', label: '简', full: '简体中文' },
 ]

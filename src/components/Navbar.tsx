@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { LANGUAGES } from '../i18n'
+// Language switcher removed — English only for now
 import { Menu, X, Sun, Moon, ChevronDown } from 'lucide-react'
 
 // Main nav items
@@ -23,7 +23,7 @@ const CONNECT_ITEMS = [
 ]
 
 export default function Navbar() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
   const [connectOpen, setConnectOpen] = useState(false)
@@ -147,26 +147,6 @@ export default function Navbar() {
 
           {/* Controls */}
           <div className="flex items-center gap-2">
-            <div role="group" aria-label="Language selection" className="flex items-center gap-0.5">
-              {LANGUAGES.map(lang => (
-                <button
-                  key={lang.code}
-                  onClick={() => i18n.changeLanguage(lang.code)}
-                  aria-pressed={i18n.language === lang.code}
-                  aria-label={lang.full}
-                  className={`px-2 py-1 text-xs font-semibold rounded transition-colors min-h-[32px] ${
-                    i18n.language === lang.code
-                      ? 'bg-blue-600 text-white'
-                      : isTransparent
-                      ? 'text-white/70 hover:text-white hover:bg-white/10'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20'
-                  }`}
-                >
-                  {lang.label}
-                </button>
-              ))}
-            </div>
-
             <button
               onClick={() => setDark(d => !d)}
               aria-label={dark ? t('a11y.toggle_light') : t('a11y.toggle_dark')}
